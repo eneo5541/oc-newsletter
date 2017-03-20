@@ -1,0 +1,143 @@
+.no-padding {
+  padding: 0 !important; }
+
+H2 {
+  font-size: 35px !important; }
+
+BODY .open-colleges-newsletter {
+  font-size: 16px; }
+  BODY .open-colleges-newsletter .bg-image {
+    background-size: cover; }
+  BODY .open-colleges-newsletter .rounded {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+  BODY .open-colleges-newsletter .row.header {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 280px 0;
+    margin: 0;
+    text-align: center; }
+    BODY .open-colleges-newsletter .row.header .open-college-logo, BODY .open-colleges-newsletter .row.header H1, BODY .open-colleges-newsletter .row.header H2 {
+      position: relative; }
+    BODY .open-colleges-newsletter .row.header .open-college-logo {
+      width: 15%; }
+    BODY .open-colleges-newsletter .row.header H1 {
+      font-size: 50px;
+      margin-top: 50px; }
+  BODY .open-colleges-newsletter .btn {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    BODY .open-colleges-newsletter .btn.btn-green {
+      background-color: #67b651;
+      border: 2px solid #39a92a;
+      color: #ffffff; }
+  BODY .open-colleges-newsletter .large-update {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    overflow: hidden; }
+    BODY .open-colleges-newsletter .large-update .update-main-description {
+      background-color: #f5f5f5;
+      padding: 30px; }
+      BODY .open-colleges-newsletter .large-update .update-main-description .update-title {
+        margin-bottom: 25px; }
+      BODY .open-colleges-newsletter .large-update .update-main-description .description-text {
+        padding-bottom: 20px; }
+    BODY .open-colleges-newsletter .large-update .update-image IMG {
+      width: 100%;
+      height: 100%; }
+  BODY .open-colleges-newsletter .updates-carousel {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px 0 80px 0; }
+    BODY .open-colleges-newsletter .updates-carousel .carousel-title {
+      margin-bottom: 30px; }
+  BODY .open-colleges-newsletter .small-update {
+    overflow: hidden;
+    background-color: #ffffff; }
+    BODY .open-colleges-newsletter .small-update .update-image {
+      width: 100%; }
+    BODY .open-colleges-newsletter .small-update .description-text {
+      padding: 0 15px; }
+      BODY .open-colleges-newsletter .small-update .description-text .update-date {
+        font-style: italic;
+        font-weight: bold;
+        margin: 25px 0; }
+  BODY .open-colleges-newsletter .subheading {
+    text-align: center; }
+    BODY .open-colleges-newsletter .subheading H2 {
+      margin: 50px 0 30px 0; }
+    BODY .open-colleges-newsletter .subheading P {
+      margin: 0;
+      font-size: 18px; }
+  BODY .open-colleges-newsletter .cta {
+    text-align: center;
+    margin-bottom: 90px; }
+    BODY .open-colleges-newsletter .cta .btn {
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      border-radius: 30px; }
+      BODY .open-colleges-newsletter .cta .btn H3 {
+        margin-top: 10px;
+        font-size: 20px; }
+  BODY .open-colleges-newsletter .highlights-carousel {
+    color: #ffffff;
+    text-align: center;
+    padding: 100px; }
+    BODY .open-colleges-newsletter .highlights-carousel .carousel-title {
+      margin-bottom: 25px; }
+    BODY .open-colleges-newsletter .highlights-carousel .pagination .bullet {
+      width: 18px;
+      height: 18px;
+      background-color: rgba(245, 245, 245, 0.5);
+      display: inline-block;
+      margin: 0 3px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px; }
+      BODY .open-colleges-newsletter .highlights-carousel .pagination .bullet.selected {
+        background-color: #f5f5f5; }
+  BODY .open-colleges-newsletter .highlights-item {
+    background-color: rgba(245, 245, 245, 0.8);
+    color: #000000;
+    text-align: left;
+    padding: 25px 20px; }
+    BODY .open-colleges-newsletter .highlights-item .fa-comments {
+      color: #05a8bb;
+      font-size: 100px;
+      padding-right: 35px;
+      display: inline;
+      float: left; }
+    BODY .open-colleges-newsletter .highlights-item .description-text {
+      margin-left: 30px;
+      font-size: 18px; }
+      BODY .open-colleges-newsletter .highlights-item .description-text .degree-text {
+        font-size: 14px; }
+  BODY .open-colleges-newsletter .tiles-carousel {
+    margin: 60px 0; }
+  BODY .open-colleges-newsletter .tiles-item {
+    text-align: center;
+    color: #ffffff;
+    padding: 75px 45px 120px 45px; }
+    BODY .open-colleges-newsletter .tiles-item .title {
+      font-size: 28px;
+      margin-bottom: 20px; }
+    BODY .open-colleges-newsletter .tiles-item .date {
+      font-size: 18px; }
+  BODY .open-colleges-newsletter .footer {
+    height: 570px;
+    background-color: #333333; }
+
+/*# sourceMappingURL=index.css.map */

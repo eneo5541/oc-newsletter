@@ -1,0 +1,211 @@
+$lightGrey: #f5f5f5;
+$green: #39a92a;
+$lightGreen: #67b651;
+$white: #ffffff;
+$black: #000000;
+$teal: #05a8bb;
+$darkGrey: #333333;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+
+H2 {
+	font-size: 35px !important;
+}
+
+BODY {
+	.open-colleges-newsletter {
+		font-size: 16px;
+
+		.bg-image {
+   			background-size: cover
+		}
+
+		.rounded {
+			@include border-radius(5px);
+		}
+
+		.row {
+			&.header {
+				position: relative;
+			    width: 100%;
+			    padding: 60px 0 280px 0;
+			    margin: 0;
+			    text-align: center;
+			    .open-college-logo, H1, H2 {
+			    	position: relative;
+			    }
+			    .open-college-logo {
+			    	width: 15%;
+			    }
+			    H1 {
+			    	font-size: 50px;
+			    	margin-top: 50px;
+			    }
+			}
+		}
+
+		.btn {
+			@include border-radius(25px);
+			padding-left: 20px;
+			padding-right: 20px;
+			&.btn-green {
+				background-color: $lightGreen;
+				border: 2px solid $green;
+				color: $white;
+			}
+		}
+
+		.large-update {    
+			display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+			margin: 60px 0;
+			overflow: hidden;
+
+			.update-main-description {
+				background-color: $lightGrey;
+				padding: 30px;
+				.update-title {
+					margin-bottom: 25px;
+				}
+				.description-text {
+					padding-bottom: 20px;
+				}
+			}
+			.update-image {
+				IMG {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		.updates-carousel {
+			background-color: $lightGrey;
+			text-align: center;
+			padding: 30px 0 80px 0;
+			.carousel-title {
+				margin-bottom: 30px;
+			}
+		}
+
+		.small-update {
+			overflow: hidden;
+			background-color: $white;
+
+			.update-image {
+				width:100%;
+			}
+			.description-text {
+				padding: 0 15px;
+				.update-date {
+					font-style: italic;
+			   		font-weight: bold;
+			   		margin: 25px 0;
+				}
+			}
+		}
+
+		.subheading {
+			text-align: center;
+			H2 {
+				margin: 50px 0 30px 0;
+			}
+			P {
+				margin: 0;
+				font-size: 18px;
+			}
+		}
+
+		.cta {
+			text-align: center;
+			margin-bottom: 90px;
+			.btn {
+				@include border-radius(30px);
+				H3 {
+					margin-top: 10px;
+					font-size: 20px;
+				}
+			}
+		}
+
+		.highlights-carousel {
+			color: $white;
+			text-align: center;
+			padding: 100px;
+			.carousel-title {
+				margin-bottom: 25px;
+			}
+			.pagination {
+				.bullet {
+					width: 18px;
+					height: 18px;
+					background-color: rgba(245, 245, 245, 0.5);
+					display: inline-block;
+					margin: 0 3px;
+					@include border-radius(50px);
+					&.selected {
+						background-color: $lightGrey;
+					}
+				}
+			}
+		}
+
+		.highlights-item {
+			background-color: rgba(245, 245, 245, 0.8);
+			color: $black;
+			text-align: left;
+			padding: 25px 20px;
+			.fa-comments {
+				color: $teal;
+				font-size: 100px;
+				padding-right: 35px;
+				display: inline;
+				float: left;
+			}
+			.description-text {
+				margin-left: 30px;
+				font-size: 18px;
+				.degree-text {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.tiles-carousel {
+			margin: 60px 0;
+		}
+
+		.tiles-item {
+			text-align: center;
+			color: $white;
+			padding: 75px 45px 120px 45px;
+			.title {
+				font-size: 28px;
+				margin-bottom: 20px;
+			}
+			.date {
+				font-size: 18px;
+			}
+		}
+
+		.footer {
+			height: 570px;
+			background-color: $darkGrey;
+		}
+	}
+}
