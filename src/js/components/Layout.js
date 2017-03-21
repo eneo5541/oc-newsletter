@@ -1,13 +1,16 @@
 import React from 'react';
 
+import Carousel from './Carousel';
 import Cta from './Cta';
 import Footer from './Footer';
 import Header from './Header';
-import HighlightsCarousel from './HighlightsCarousel';
+import HighlightsItem from './HighlightsItem';
 import LargeUpdate from './LargeUpdate';
+import SmallUpdate from './SmallUpdate';
 import Subheading from './Subheading';
-import TilesCarousel from './TilesCarousel';
-import UpdatesCarousel from './UpdatesCarousel';
+import TilesItem from './TilesItem';
+import VacancyItem from './VacancyItem';
+
 
 export default class Layout extends React.Component {
 	constructor() {
@@ -25,6 +28,9 @@ export default class Layout extends React.Component {
 			},
 			divisionsData: {
 				title: 'Updates from each division',
+				class: 'updates-carousel',
+				size: 8,
+				renderer: SmallUpdate,
 				tiles: [{
 					title: 'HR',
 					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id placerat nibh. Ut sagittis non ante non congue... <a href={this.props.data.link}>Read More</a>',
@@ -60,23 +66,26 @@ export default class Layout extends React.Component {
 				}
 			},
 			vacanciesUpdateData: {
-				description: '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id placerat nibh. Ut sagittis non ante non congue. Maecenas varius rutrum augue, quis egestas sem molestie in. Nunc ut sollicitudin arcu. Sed mi purus, porta non vestibulum sed, blandit in purus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id placerat nibh. Ut sagittis non ante non congue. Maecenas varius rutrum augue, quis egestas sem molestie in. Nunc ut sollicitudin arcu.</p>',
 				image: 'images/job-vacancy-img1.jpg'
 			},
 			studentQuotes: {
 				title: 'What our students say about Open Colleges',
+				pagination: true,
+				class: 'highlights-carousel',
 				background: 'images/bg-student-testimonial.jpg',
+				size: 6,
+				renderer: HighlightsItem,
 				tiles: [{
-					quote: 'Our talent acquisition team are currently seeking applicants for 2 Education Compliance Advisor positions within our Business, Finance and Services Education Division',
-					student: '1Sarah Smith',
+					title: 'Our talent acquisition team are currently seeking applicants for 2 Education Compliance Advisor positions within our Business, Finance and Services Education Division',
+					student: 'Sarah Smith',
 					degree: 'Diploma of Counselling'
 				}, {
-					quote: 'Our talent acquisition team are currently seeking applicants for 2 Education Compliance Advisor positions within our Business, Finance and Services Education Division',
-					student: '2Sarah Smith',
+					title: 'Our talent acquisition team are currently seeking applicants for 2 Education Compliance Advisor positions within our Business, Finance and Services Education Division',
+					student: 'Sarah Smith',
 					degree: 'Diploma of Counselling'
 				}, {
-					quote: 'Our talent acquisition team are currently seeking applicants for 2 Education Compliance Advisor positions within our Business, Finance and Services Education Division',
-					student: '3Sarah Smith',
+					title: 'Our talent acquisition team are currently seeking applicants for 2 Education Compliance Advisor positions within our Business, Finance and Services Education Division',
+					student: 'Sarah Smith',
 					degree: 'Diploma of Counselling'
 				}]
 			},
@@ -89,6 +98,9 @@ export default class Layout extends React.Component {
 				}
 			},
 			eventsData: {
+				class: 'tiles-carousel',
+				size: 6,
+				renderer: TilesItem,
 				tiles: [{
 					title: 'Christmas Party',
 					date: '6th December, 2016',
@@ -105,6 +117,12 @@ export default class Layout extends React.Component {
 					image: 'images/christmas-party3.jpg',
 					link: '#'
 				}]
+			},
+			vacancyData: {
+				title: 'Education Compliance Advisor',
+				description: 'Our Talent Acquisition Team are currently seeking applications for 2 Education Compliance Advisor positions within our Business, Finance and Services Education Division.',
+				descriptionTranscript: '#',
+				closingDate: 'Tuesday 26th July, 5.00pm'
 			}
 		};
 	}
@@ -114,13 +132,13 @@ export default class Layout extends React.Component {
 			<div class='open-colleges-newsletter'>
 				<Header data={this.state.headerData} />
 			    <LargeUpdate data={this.state.nicsUpdateData} />
-			    <UpdatesCarousel data={this.state.divisionsData} />
+			    <Carousel data={this.state.divisionsData} />
 			    <Subheading data={this.state.vacanciesSubheading}/>
-				<LargeUpdate data={this.state.vacanciesUpdateData} />
+				<LargeUpdate data={this.state.vacanciesUpdateData}><VacancyItem data={this.state.vacancyData} /><VacancyItem data={this.state.vacancyData} /></LargeUpdate>
 				<Cta data={this.state.vacanciesSubheading.cta} />
-				<HighlightsCarousel data={this.state.studentQuotes} />
+				<Carousel data={this.state.studentQuotes} />
 			    <Subheading data={this.state.upcomingEventsSubheading}/>
-			    <TilesCarousel data={this.state.eventsData} />
+			    <Carousel data={this.state.eventsData} />
 				<Cta data={this.state.upcomingEventsSubheading.cta} />
 				<Footer />
 			</div>

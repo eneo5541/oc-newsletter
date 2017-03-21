@@ -97,18 +97,18 @@ BODY .open-colleges-newsletter {
     padding: 100px; }
     BODY .open-colleges-newsletter .highlights-carousel .carousel-title {
       margin-bottom: 25px; }
-    BODY .open-colleges-newsletter .highlights-carousel .pagination .bullet {
-      width: 18px;
-      height: 18px;
-      background-color: rgba(245, 245, 245, 0.5);
-      display: inline-block;
-      margin: 0 3px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      -ms-border-radius: 50px;
-      border-radius: 50px; }
-      BODY .open-colleges-newsletter .highlights-carousel .pagination .bullet.selected {
-        background-color: #f5f5f5; }
+  BODY .open-colleges-newsletter .pagination .bullet {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(245, 245, 245, 0.5);
+    display: inline-block;
+    margin: 0 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px; }
+    BODY .open-colleges-newsletter .pagination .bullet.selected {
+      background-color: #f5f5f5; }
   BODY .open-colleges-newsletter .highlights-item {
     background-color: rgba(245, 245, 245, 0.8);
     color: #000000;
@@ -125,6 +125,26 @@ BODY .open-colleges-newsletter {
       font-size: 18px; }
       BODY .open-colleges-newsletter .highlights-item .description-text .degree-text {
         font-size: 14px; }
+  BODY .open-colleges-newsletter .vacancy-item {
+    padding: 0 15px; }
+    BODY .open-colleges-newsletter .vacancy-item:not(:first-of-type) {
+      margin-top: 20px; }
+    BODY .open-colleges-newsletter .vacancy-item .fa-briefcase {
+      color: #333333;
+      font-size: 22px;
+      display: inline;
+      float: left; }
+    BODY .open-colleges-newsletter .vacancy-item .description-text {
+      padding: 0 0 0 15px !important;
+      margin-left: 30px;
+      font-size: 16px; }
+      BODY .open-colleges-newsletter .vacancy-item .description-text .fa-file-pdf-o {
+        padding: 0 10px 10px 0; }
+      BODY .open-colleges-newsletter .vacancy-item .description-text H3 {
+        font-size: 22px;
+        margin-top: 0px; }
+      BODY .open-colleges-newsletter .vacancy-item .description-text .closing-date {
+        font-weight: bold; }
   BODY .open-colleges-newsletter .tiles-carousel {
     margin: 60px 0; }
   BODY .open-colleges-newsletter .tiles-item {

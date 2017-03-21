@@ -150,17 +150,18 @@ BODY {
 			.carousel-title {
 				margin-bottom: 25px;
 			}
-			.pagination {
-				.bullet {
-					width: 18px;
-					height: 18px;
-					background-color: rgba(245, 245, 245, 0.5);
-					display: inline-block;
-					margin: 0 3px;
-					@include border-radius(50px);
-					&.selected {
-						background-color: $lightGrey;
-					}
+		}
+		
+		.pagination {
+			.bullet {
+				width: 18px;
+				height: 18px;
+				background-color: rgba(245, 245, 245, 0.5);
+				display: inline-block;
+				margin: 0 3px;
+				@include border-radius(50px);
+				&.selected {
+					background-color: $lightGrey;
 				}
 			}
 		}
@@ -182,6 +183,34 @@ BODY {
 				font-size: 18px;
 				.degree-text {
 					font-size: 14px;
+				}
+			}
+		}
+
+		.vacancy-item {
+			&:not(:first-of-type) {
+				margin-top: 20px;
+			}
+			padding: 0 15px;
+			.fa-briefcase {
+				color: $darkGrey;
+				font-size: 22px;
+				display: inline;
+				float: left;
+			}
+			.description-text {
+				padding: 0 0 0 15px !important;
+				margin-left: 30px;
+				font-size: 16px;
+				.fa-file-pdf-o {
+					padding: 0 10px 10px 0;
+				}
+				H3 {
+					font-size: 22px;
+					margin-top: 0px;
+				}
+				.closing-date {
+					font-weight: bold;
 				}
 			}
 		}

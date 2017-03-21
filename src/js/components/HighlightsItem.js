@@ -7,12 +7,10 @@ export default class HighlightsItem extends React.Component {
         return (
 			<div class={display}>	
 				<i class="fa fa-comments" aria-hidden="true"></i>
-				<div>
-					<div class='description-text'>
-						<p>"{this.props.data.quote}"</p>
-						<p>{this.props.data.student}</p>
-						<p class='degree-text'>{this.props.data.degree}</p>
-					</div>
+				<div class='description-text'>
+					<p>"{this.props.data.title}"</p>
+					<p>{this.props.data.student}</p>
+					<p class='degree-text'>{this.props.data.degree}</p>
 				</div>
 			</div>
         );
