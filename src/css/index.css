@@ -150,7 +150,8 @@ BODY .open-colleges-newsletter {
   BODY .open-colleges-newsletter .tiles-item {
     text-align: center;
     color: #ffffff;
-    padding: 75px 45px 120px 45px; }
+    padding: 75px 45px 120px 45px;
+    background-size: cover; }
     BODY .open-colleges-newsletter .tiles-item .title {
       font-size: 28px;
       margin-bottom: 20px; }

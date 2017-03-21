@@ -35,7 +35,7 @@ export default class LargeUpdate extends React.Component {
 						<div class='col-md-8 update-main-description'>
 							{content}
 						</div>
-						<div class='col-md-4 no-padding update-image'>		
+						<div class='col-md-4 no-padding update-image hidden-sm hidden-xs'>		
 							<img src={this.props.data.image}></img>
 						</div>
 					</div>
